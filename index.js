@@ -15,12 +15,6 @@ const questions = [
         name: 'description'
     },
     {
-        type: 'list',
-        message: 'Choose a license',
-        name: 'license',
-        choices: ['MIT', 'GNU', 'CreativeCommons']
-    },
-    {
         type: 'input',
         message: 'What are the steps to install your project?',
         name: 'installation'
@@ -33,7 +27,28 @@ const questions = [
     {
         type: 'input',
         message: 'List your collaborators',
-        name: 'credit'
+        name: 'credits'
+    },
+    {
+        type: 'list',
+        message: 'Choose a license',
+        name: 'license',
+        choices: ['MIT', 'GNU', 'CreativeCommons']
+    },
+    {
+        type: 'input',
+        message: "List your project's special features here",
+        name: 'features'
+    },
+    {
+        type: 'input',
+        message: 'Explain to your readers how to contribute to your project',
+        name: 'contribute'
+    },
+    {
+        type: 'input',
+        message: 'Write tests for your application here',
+        name: 'tests'
     }
 ];
 

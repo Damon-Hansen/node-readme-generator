@@ -18,8 +18,6 @@ function generateMarkdown(data) {
 
 ${data.description}
 
-![](https://img.shields.io/badge/license-${data.license}-blue)
-
 ## Table of Contents
 
 - [Installation](#installation)
@@ -37,7 +35,21 @@ ${data.usage}
 
 ## Credits
 
-${data.credit}
+${data.credits}
+
+![](https://img.shields.io/badge/license-${data.license}-blue)
+
+## Features
+
+${data.features}
+
+## How to Contribute
+
+${data.contribute}
+
+## Tests
+
+${data.tests}
 `
 }
 
