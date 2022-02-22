@@ -14,6 +14,8 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
 
+![](https://img.shields.io/badge/license-${data.license}-blue)
+
 ## Description
 
 ${data.description}
@@ -37,8 +39,6 @@ ${data.usage}
 
 ${data.credits}
 
-![](https://img.shields.io/badge/license-${data.license}-blue)
-
 ## Features
 
 ${data.features}
@@ -50,6 +50,13 @@ ${data.contribute}
 ## Tests
 
 ${data.tests}
+
+## Questions
+
+If you have any questions here is my contact info to reach out to me.
+
+https://github.com/${data.github}
+${data.email}
 `
 }
 

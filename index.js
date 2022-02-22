@@ -10,6 +10,12 @@ const questions = [
         name: 'title'
     },
     {
+        type: 'list',
+        message: 'Choose a license',
+        name: 'license',
+        choices: ['MIT', 'GNU', 'CreativeCommons']
+    },
+    {
         type: 'input',
         message: 'Provide a short description of your project',
         name: 'description'
@@ -30,12 +36,6 @@ const questions = [
         name: 'credits'
     },
     {
-        type: 'list',
-        message: 'Choose a license',
-        name: 'license',
-        choices: ['MIT', 'GNU', 'CreativeCommons']
-    },
-    {
         type: 'input',
         message: "List your project's special features here",
         name: 'features'
@@ -49,6 +49,16 @@ const questions = [
         type: 'input',
         message: 'Write tests for your application here',
         name: 'tests'
+    },
+    {
+        type: 'input',
+        message: 'Enter your github username',
+        name: 'github'
+    },
+    {
+        type: 'input',
+        message: 'Enter your email',
+        name: 'email'
     }
 ];
 
